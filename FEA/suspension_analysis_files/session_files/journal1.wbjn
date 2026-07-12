@@ -1,0 +1,75 @@
+# encoding: utf-8
+# 2026 R1
+SetScriptVersion(Version="26.1.174")
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.OpenLibrary(
+    Name="General Materials",
+    Source="General_Materials.xml")
+EngData.EnableFilter(Enable=False)
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="AISI 1070")
+matlProp1 = matl1.CreateProperty(
+    Name="Density",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp1.SetData(
+    Index=-1,
+    Variables=["Density"],
+    Values=[["785 [kg m^-3]"]])
+matlProp2 = matl1.CreateProperty(
+    Name="Tensile Yield Strength",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp3 = matl1.CreateProperty(
+    Name="Tensile Ultimate Strength",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp2.SetData(
+    Index=-1,
+    Variables=["Tensile Yield Strength"],
+    Values=[["250000000 [Pa]"]])
+matlProp2.SetData(
+    Variables=["Tensile Yield Strength"],
+    Values=[["505000000 [Pa]"]])
+matlProp3.SetData(
+    Index=-1,
+    Variables=["Tensile Ultimate Strength"],
+    Values=[["250000000 [Pa]"]])
+matlProp3.SetData(
+    Variables=["Tensile Ultimate Strength"],
+    Values=[["640000000 [Pa]"]])
+matlProp2.SetData(
+    Variables=["Tensile Yield Strength"],
+    Values=[["495000000 [Pa]"]])
+matlProp4 = matl1.CreateProperty(
+    Name="Elasticity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp4.SetData(
+    SheetName="Elasticity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic", "Derive from": "Young's Modulus and Poisson's Ratio"},
+    Index=-1,
+    Variables=["Poisson's Ratio"],
+    Values=[["0.29"]])
+matlProp4.SetData(
+    SheetName="Elasticity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic", "Derive from": "Young's Modulus and Poisson's Ratio"},
+    Variables=["Young's Modulus"],
+    Values=[["250000000 [Pa]"]])
+matlProp4.SetData(
+    SheetName="Elasticity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic", "Derive from": "Young's Modulus and Poisson's Ratio"},
+    Variables=["Young's Modulus"],
+    Values=[["205000000 [Pa]"]])
+matl1.SetSuppression(Suppressed=True)
+matl1.SetSuppression(Suppressed=False)
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+material1.Delete()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsDiscoveryGeometry=True)
+geometry1.SetFile(FilePath=GetAbsoluteUserPathName("PersonalProjects/FSAE/GOGO_FSAE_CAD/FEA/Full Car Assembly.x_b"))
+Save(Overwrite=True)
+Archive(FilePath=GetAbsoluteUserPathName("PersonalProjects/FSAE/GOGO_FSAE_CAD/FEA/suspension_analysis.wbpz"))
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
