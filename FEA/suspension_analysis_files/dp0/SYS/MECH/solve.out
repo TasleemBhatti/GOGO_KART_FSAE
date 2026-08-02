@@ -1,0 +1,1876 @@
+
+ Ansys Mechanical Enterprise Academic Student      
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *         ANSYS MAPDL 2026 R1          LEGAL NOTICES          *
+ ***************************************************************
+ *                                                             *
+ * Copyright (c) 2026 Synopsys, Inc. and ANSYS, Inc.           *
+ * All rights reserved.                                        *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of Ansys, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the Ansys, Inc. online documentation or the Ansys, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * Ansys, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * Ansys, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the Ansys, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the Ansys, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2026 R1 
+     
+ Point Releases and Patches installed:   
+     
+ Ansys, Inc. License Manager 2026 R1 
+ Discovery (full install) 2026 R1
+ Core WB Files 2026 R1   
+ optiSLang Core UI 2026 R1   
+ CFX (includes CFD-Post) 2026 R1 
+ Chemkin 2026 R1 
+ EnSight 2026 R1 
+ FENSAP-ICE 2026 R1  
+ Fluent (includes CFD-Post) 2026 R1  
+ Polyflow (includes CFD-Post) 2026 R1
+ Forte (includes EnSight) 2026 R1
+ Rocky 2026 R1   
+ TurboGrid 2026 R1   
+ ACIS Geometry Interface 2026 R1 
+ AutoCAD Geometry Interface 2026 R1  
+ Catia, Version 4 Geometry Interface 2026 R1 
+ Catia, Version 5 Geometry Interface 2026 R1 
+ Catia, Version 6 Geometry Interface 2026 R1 
+ Creo Elements/Direct Modeling Geometry Interface 2026 R1
+ Creo Parametric Geometry Interface 2026 R1  
+ Inventor Geometry Interface 2026 R1 
+ JTOpen Geometry Interface 2026 R1   
+ NX Geometry Interface 2026 R1   
+ Parasolid Geometry Interface  2026 R1   
+ Solid Edge Geometry Interface 2026 R1   
+ SOLIDWORKS Geometry Interface 2026 R1   
+ Speos 2026 R1   
+ SpaceClaim 2026 R1  
+ Speos RPC 2026 R1   
+ Zemax OpticStudio 2026 R1   
+ Dynamic Reporting 2026 R1   
+ Aqwa 2026 R1
+ Autodyn 2026 R1 
+ Material Calibration App 2026 R1
+ Mechanical Products 2026 R1 
+ Motion 2026 R1  
+ Academic Student 2026 R1
+
+
+          *****  MAPDL COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  SHARED MEMORY PARALLEL REQUESTED
+    SINGLE PROCESS WITH   2 THREADS REQUESTED
+    TOTAL OF     2 CORES REQUESTED
+  INPUT FILE NAME              = C:\Users\tasle\Documents\PersonalProjects\FSAE\GOGO_FSAE_CAD\FEA\_ProjectScratch\ScrE697\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\tasle\Documents\PersonalProjects\FSAE\GOGO_FSAE_CAD\FEA\_ProjectScratch\ScrE697\solve.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= 2026 R1              BUILD= 26.1      UP20260202   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file  20:25:13  JUL 15, 2026  Elapsed Time=       0.312
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ DO NOT WRITE ELEMENT RESULTS INTO DATABASE
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE= 0.194235842E-02
+
+ TITLE= 
+ suspension_analysis--Static Structural (A5)                                   
+
+  ACT Extensions:
+      LSDYNA, 2026.1
+      5f463412-bd3e-484b-87e7-cbc0a665e474, wbex
+      ANSYSMotion, 2026.1
+      20180725-3f81-49eb-9f31-41364844c769, wbex
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\tasle\Documents\PersonalProjects\FSAE\GOGO_FSAE_CAD\FEA\_ProjectScratch\ScrE697\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\tasle\Documents\PersonalProjects\FSAE\GOGO_FSAE_CAD\FEA\suspension_analysis_files\dp0\SYS\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\tasle\Documents\PersonalProjects\FSAE\GOGO_FSAE_CAD\FEA\suspension_analysis_files\user_files\
+ --- Data in consistent MKS units. See Solving Units in the help system for more
+
+ MKS UNITS SPECIFIED FOR INTERNAL    
+  LENGTH        (l)  = METER (M)
+  MASS          (M)  = KILOGRAM (KG)
+  TIME          (t)  = SECOND (SEC)
+  TEMPERATURE   (T)  = CELSIUS (C)
+  TOFFSET            = 273.0
+  CHARGE        (Q)  = COULOMB
+  FORCE         (f)  = NEWTON (N) (KG-M/SEC2)
+  HEAT               = JOULE (N-M)
+
+  PRESSURE           = PASCAL (NEWTON/M**2)
+  ENERGY        (W)  = JOULE (N-M)
+  POWER         (P)  = WATT (N-M/SEC)
+  CURRENT       (i)  = AMPERE (COULOMBS/SEC)
+  CAPACITANCE   (C)  = FARAD
+  INDUCTANCE    (L)  = HENRY
+  MAGNETIC FLUX      = WEBER
+  RESISTANCE    (R)  = OHM
+  ELECTRIC POTENTIAL = VOLT
+
+ INPUT  UNITS ARE ALSO SET TO MKS 
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2026 R1          26.1     ***
+ Ansys Mechanical Enterprise Academic Student      
+ 01055371  VERSION=WINDOWS x64   20:25:13  JUL 15, 2026 Elapsed Time=      7.003
+
+ suspension_analysis--Static Structural (A5)                                   
+
+
+
+          ***** MAPDL ANALYSIS DEFINITION (PREP7) *****
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Nodes for the whole assembly ***********
+ *********** Nodes for all Remote Points ***********
+ *********** Elements for Body 1 'Beam (Extracted Profile1)' ***********
+ *********** Elements for Body 2 'Beam (Extracted Profile1)' ***********
+ *********** Elements for Body 3 'Beam (Extracted Profile1)' ***********
+ *********** Elements for Body 4 'Beam (Extracted Profile1)' ***********
+ *********** Elements for Body 5 'Beam (Extracted Profile2)' ***********
+ *********** Elements for Body 6 'Beam (Extracted Profile2)' ***********
+ *********** Elements for Body 7 'Beam (Extracted Profile2)' ***********
+ *********** Elements for Body 8 'Beam (Extracted Profile2)' ***********
+ *********** Elements for Body 9 'Beam (Extracted Profile2)' ***********
+ *********** Elements for Body 10 'Beam (Extracted Profile1)' ***********
+ *********** Elements for Body 11 'Beam (Extracted Profile1)' ***********
+ *********** Elements for Body 12 'Beam (Extracted Profile1)' ***********
+ *********** Elements for Body 13 'Beam (Extracted Profile1)' ***********
+ *********** Elements for Body 14 'Beam (Extracted Profile1)' ***********
+ *********** Elements for Body 15 'Beam (Extracted Profile1)' ***********
+ *********** Elements for Body 16 'Beam (Extracted Profile1)' ***********
+ *********** Elements for Body 17 'Beam (Extracted Profile1)' ***********
+ *********** Set Reference Temperature ***********
+ *********** Send Materials ***********
+ *********** Send Beam Properties ***********
+ *********** Send Named Selection as Node Component ***********
+ *********** Send Named Selection as Node Component ***********
+ *********** Send Named Selection as Node Component ***********
+ *********** Send Named Selection as Node Component ***********
+ *********** Send Named Selection as Node Component ***********
+ *********** Send Named Selection as Node Component ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point" ***********
+ *********** Create Remote Point "Internal Remote Point 2" ***********
+ *********** Create Remote Point "Internal Remote Point 3" ***********
+ *********** Create Remote Point "Internal Remote Point 4" ***********
+ *********** Create Remote Point "Internal Remote Point 5" ***********
+ *********** Create Remote Point "Internal Remote Point 6" ***********
+ *********** Create Remote Point "Internal Remote Point 7" ***********
+ *********** Create Remote Point "Internal Remote Point 8" ***********
+ *********** Create Remote Point "Internal Remote Point 9" ***********
+ *********** Create Remote Point "Internal Remote Point 10" ***********
+ *********** Create Remote Point "Internal Remote Point 11" ***********
+ *********** Create Remote Point "Internal Remote Point 12" ***********
+ *********** Create Remote Point "Internal Remote Point 13" ***********
+ *********** Create Remote Point "Internal Remote Point 14" ***********
+ *********** Create Remote Point "Internal Remote Point 15" ***********
+ *********** Create Joint "Spherical - Beam (Extracted Profile2) To Beam (Extrac
+             Real Constant Set For Above Joint Is 81
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 82
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 83
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 84
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 85
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 86
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 87
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 88
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 89
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 90
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 91
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 92
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 93
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 94
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 95
+ *********** Create Joint "Chassis A Arms Spherical - Beam (Extracted Profile2) 
+             Real Constant Set For Above Joint Is 96
+ *********** Create Joint "General - Beam (Extracted Profile2) To Beam (Extracte
+             Real Constant Set For Above Joint Is 97
+ *********** Create Joint "Fixed - Beam (Extracted Profile2) To Beam (Extracted 
+             Real Constant Set For Above Joint Is 98
+ *********** Create Joint "General - Beam (Extracted Profile2) To Beam (Extracte
+             Real Constant Set For Above Joint Is 99
+ *********** Create Joint "General - Beam (Extracted Profile2) To Beam (Extracte
+             Real Constant Set For Above Joint Is 100
+ *********** Create Joint "Upright Upper Upright Lower Spherical - Beam (Extract
+             Real Constant Set For Above Joint Is 101
+ *********** Create Joint "Upright Upper Upright Lower Spherical - Beam (Extract
+             Real Constant Set For Above Joint Is 102
+ *********** Create Joint "Upright Upper Upright Lower Spherical - Beam (Extract
+             Real Constant Set For Above Joint Is 103
+ *********** Create Joint "Upright Upper Upright Lower Spherical - Beam (Extract
+             Real Constant Set For Above Joint Is 104
+ *********** Create Spring Connection "Longitudinal - Beam (Extracted Profile2) 
+             Real Constant Set For Above Spring Connection Is 105
+ *********** Create Spring Connection "Longitudinal - Beam (Extracted Profile2) 
+             Real Constant Set For Above Spring Connection Is 106
+ *********** Create Spring Connection "Longitudinal - Beam (Extracted Profile2) 
+             Real Constant Set For Above Spring Connection Is 107
+ *********** Create Spring Connection "Longitudinal - Beam (Extracted Profile2) 
+             Real Constant Set For Above Spring Connection Is 108
+ *********** Construct Remote Force ***********
+ *********** Construct Remote Force ***********
+ *********** Construct Remote Displacement ***********
+ *********** Construct Remote Displacement ***********
+ *********** Construct Remote Displacement ***********
+ *** Create a component for all remote displacements ***
+
+
+ ***** ROUTINE COMPLETED *****  ELAPSED TIME =         7.259
+
+
+ --- Number of total nodes = 2162
+ --- Number of contact elements = 14
+ --- Number of spring elements = 0
+ --- Number of bearing elements = 0
+ --- Number of solid elements = 1067
+ --- Number of condensed parts = 0
+ --- Number of total elements = 1229
+
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE= 0.201714803E-02
+ ****************************************************************************
+ *************************    SOLUTION       ********************************
+ ****************************************************************************
+
+ *****  MAPDL SOLUTION ROUTINE  *****
+
+
+ PERFORM A STATIC ANALYSIS
+  THIS WILL BE A NEW ANALYSIS
+
+ PARAMETER _THICKRATIO =     0.000000000    
+
+ USE SPARSE MATRIX DIRECT SOLVER
+
+ INERTIA RELIEF KEY=  1
+
+ CONTACT INFORMATION PRINTOUT LEVEL       1
+
+ NLDIAG: Nonlinear diagnostics CONT option is set to ON. 
+         Writing frequency : each ITERATION.
+
+ DO NOT SAVE ANY RESTART FILES AT ALL
+ ****************************************************
+ ******************* SOLVE FOR LS 1 OF 1 ****************
+
+ SPECIFIED NODAL LOAD FX   FOR SELECTED NODES      2158 TO     2158 BY        1
+  REAL= 8.089645867E-13   IMAG=  0.00000000    
+
+ SPECIFIED NODAL LOAD FY   FOR SELECTED NODES      2158 TO     2158 BY        1
+  REAL=  1000.00000       IMAG=  0.00000000    
+
+ SPECIFIED NODAL LOAD FZ   FOR SELECTED NODES      2158 TO     2158 BY        1
+  REAL=  0.00000000       IMAG=  0.00000000    
+
+ SPECIFIED NODAL LOAD FX   FOR SELECTED NODES      2159 TO     2159 BY        1
+  REAL= 1.003925025E-09   IMAG=  0.00000000    
+
+ SPECIFIED NODAL LOAD FY   FOR SELECTED NODES      2159 TO     2159 BY        1
+  REAL= -1000.00000       IMAG=  0.00000000    
+
+ SPECIFIED NODAL LOAD FZ   FOR SELECTED NODES      2159 TO     2159 BY        1
+  REAL= 3.646812453E-09   IMAG=  0.00000000    
+
+ SPECIFIED CONSTRAINT UZ   FOR SELECTED NODES         2160 TO        2160 BY           1
+ REAL=  0.00000000       IMAG=  0.00000000    
+
+ SPECIFIED CONSTRAINT UX   FOR SELECTED NODES         2161 TO        2161 BY           1
+ REAL=  0.00000000       IMAG=  0.00000000    
+
+ SPECIFIED CONSTRAINT UY   FOR SELECTED NODES         2161 TO        2161 BY           1
+ REAL=  0.00000000       IMAG=  0.00000000    
+
+ SPECIFIED CONSTRAINT UZ   FOR SELECTED NODES         2161 TO        2161 BY           1
+ REAL=  0.00000000       IMAG=  0.00000000    
+
+ SPECIFIED CONSTRAINT ROTX FOR SELECTED NODES         2161 TO        2161 BY           1
+ REAL=  0.00000000       IMAG=  0.00000000    
+
+ SPECIFIED CONSTRAINT ROTY FOR SELECTED NODES         2161 TO        2161 BY           1
+ REAL=  0.00000000       IMAG=  0.00000000    
+
+ SPECIFIED CONSTRAINT ROTZ FOR SELECTED NODES         2161 TO        2161 BY           1
+ REAL=  0.00000000       IMAG=  0.00000000    
+
+ SPECIFIED CONSTRAINT UX   FOR SELECTED NODES         2162 TO        2162 BY           1
+ REAL=  0.00000000       IMAG=  0.00000000    
+
+ SPECIFIED CONSTRAINT UY   FOR SELECTED NODES         2162 TO        2162 BY           1
+ REAL=  0.00000000       IMAG=  0.00000000    
+
+ SPECIFIED CONSTRAINT UZ   FOR SELECTED NODES         2162 TO        2162 BY           1
+ REAL=  0.00000000       IMAG=  0.00000000    
+
+ PRINTOUT RESUMED BY /GOP
+
+ USE       1 SUBSTEPS INITIALLY THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+ FOR AUTOMATIC TIME STEPPING:
+   USE      1 SUBSTEPS AS A MAXIMUM
+   USE      1 SUBSTEPS AS A MINIMUM
+
+ TIME=  1.0000    
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE RSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EANG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ETMP ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE VENG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE STRS ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPEL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPPL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CONT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ PRINTOUT RESUMED BY /GOP
+
+ WRITE MISC ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR THE ENTITIES DEFINED BY COMPONENT _ELMISC 
+
+ *GET  ANSINTER_  FROM  ACTI  ITEM=INT        VALUE=  0.00000000    
+
+ *IF  ANSINTER_  ( =   0.00000     )  NE  
+      0  ( =   0.00000     )  THEN    
+
+ *ENDIF
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         ELAPSED TIME =       7.354   TIME= 20:25:13
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         ELAPSED TIME =       7.364   TIME= 20:25:13
+ MPC184 elements are being used in the current analysis and the          
+ NLGEOM,ON command has not been used.  Thus, only linearized behavior    
+ will be considered.  If finite rotation and large deflection effects    
+ are to be considered, please use the NLGEOM,ON command.                 
+
+ *** NOTE ***                            ELAPSED TIME =       7.373   TIME= 20:25:13
+ The model data was checked and warning messages were found.             
+  Please review output or errors file (                                  
+ C:\Users\tasle\Documents\PersonalProjects\FSAE\GOGO_FSAE_CAD\FEA\_Proje 
+ ectScratch\ScrE697\file.err ) for these warning messages.               
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE         1 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         1 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         2 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         2 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         3 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         3 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         4 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         4 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         5 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         5 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         6 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         6 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         7 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         7 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         8 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         8 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         9 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE         9 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        10 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        10 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        11 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        11 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        12 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        12 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        13 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        13 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        14 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        14 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        15 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        15 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        16 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        16 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        17 IS BEAM188 . KEYOPT(3) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE        17 IS BEAM188 . KEYOPT(15) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2026 R1          26.1     ***
+ Ansys Mechanical Enterprise Academic Student      
+ 01055371  VERSION=WINDOWS x64   20:25:13  JUL 15, 2026 Elapsed Time=      7.384
+
+ suspension_analysis--Static Structural (A5)                                   
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ   ROTX ROTY ROTZ
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
+   EQUATION SOLVER OPTION. . . . . . . . . . . . .SPARSE             
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+
+ *** WARNING ***                         ELAPSED TIME =       7.399   TIME= 20:25:13
+ Material number 105 (used by element 1068) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** NOTE ***                            ELAPSED TIME =       7.405   TIME= 20:25:13
+ The step data was checked and warning messages were found.              
+  Please review output or errors file (                                  
+ C:\Users\tasle\Documents\PersonalProjects\FSAE\GOGO_FSAE_CAD\FEA\_Proje 
+ ectScratch\ScrE697\file.err ) for these warning messages.               
+
+ *** NOTE ***                            ELAPSED TIME =       7.420   TIME= 20:25:13
+ Internal nodes from 2163 to 3365 are created.                           
+ 61 internal nodes are used for handling degrees of freedom on pilot     
+ nodes of rigid target surfaces.                                         
+ 75 internal nodes are used for non-contact elements with mixed          
+ formulation.                                                            
+ 1067 internal nodes are used for quadratic and/or cubic options of      
+ BEAM188, PIPE288, and/or SHELL208.                                      
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    
+   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .     1
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO
+   INERTIA RELIEF. . . . . . . . . . . . . . . . .   ON              
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      RSOL        ALL               
+      EANG        ALL               
+      ETMP        ALL               
+      VENG        ALL               
+      STRS        ALL               
+      EPEL        ALL               
+      EPPL        ALL               
+      CONT        ALL               
+      MISC        ALL       _ELMISC 
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+ *WARNING*: Node 1765 has been used on different contact pairs (real ID  
+ 50 & 66).  These two pairs will be merged.  Please check the model      
+ carefully.                                                              
+ *WARNING*: Some MPC/Lagrange based elements (e.g.1269) in real constant 
+ set 74 overlap with other MPC/Lagrange based elements (e.g.1242) in     
+ real constant set 60 which can cause overconstraint.                    
+
+ *** NOTE ***                            ELAPSED TIME =       7.571   TIME= 20:25:14
+ Rigid target surface identified by real constant set 18.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2102.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.572   TIME= 20:25:14
+ Rigid target surface identified by real constant set 19.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2103.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.573   TIME= 20:25:14
+ Rigid target surface identified by real constant set 20.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2104.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.573   TIME= 20:25:14
+ Rigid target surface identified by real constant set 21.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2105.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.573   TIME= 20:25:14
+ Rigid target surface identified by real constant set 22.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2106.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.573   TIME= 20:25:14
+ Rigid target surface identified by real constant set 23.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2107.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.573   TIME= 20:25:14
+ Rigid target surface identified by real constant set 24.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2108.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.573   TIME= 20:25:14
+ Rigid target surface identified by real constant set 25.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2109.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.573   TIME= 20:25:14
+ Rigid target surface identified by real constant set 26.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2110.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.573   TIME= 20:25:14
+ Rigid target surface identified by real constant set 27.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2111.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.573   TIME= 20:25:14
+ Rigid target surface identified by real constant set 28.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2112.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.573   TIME= 20:25:14
+ Rigid target surface identified by real constant set 29.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2113.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.573   TIME= 20:25:14
+ Rigid target surface identified by real constant set 30.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2114.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.573   TIME= 20:25:14
+ Rigid target surface identified by real constant set 31.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2115.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.574   TIME= 20:25:14
+ Rigid target surface identified by real constant set 32.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2116.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.574   TIME= 20:25:14
+ Rigid target surface identified by real constant set 33.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2117.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.574   TIME= 20:25:14
+ Rigid target surface identified by real constant set 34.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2118.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.574   TIME= 20:25:14
+ Rigid target surface identified by real constant set 35.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2119.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.574   TIME= 20:25:14
+ Rigid target surface identified by real constant set 36.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2120.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.574   TIME= 20:25:14
+ Rigid target surface identified by real constant set 37.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2121.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.574   TIME= 20:25:14
+ Rigid target surface identified by real constant set 38.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2122.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.574   TIME= 20:25:14
+ Rigid target surface identified by real constant set 39.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2123.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.574   TIME= 20:25:14
+ Rigid target surface identified by real constant set 40.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2124.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.574   TIME= 20:25:14
+ Rigid target surface identified by real constant set 41.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2125.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.574   TIME= 20:25:14
+ Rigid target surface identified by real constant set 42.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2126.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.574   TIME= 20:25:14
+ Rigid target surface identified by real constant set 43.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2127.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.574   TIME= 20:25:14
+ Rigid target surface identified by real constant set 44.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2128.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.575   TIME= 20:25:14
+ Rigid target surface identified by real constant set 45.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2129.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.575   TIME= 20:25:14
+ Rigid target surface identified by real constant set 46.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2130.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.575   TIME= 20:25:14
+ Rigid target surface identified by real constant set 47.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2131.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.575   TIME= 20:25:14
+ Rigid target surface identified by real constant set 48.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2132.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.575   TIME= 20:25:14
+ Rigid target surface identified by real constant set 49.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2133.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.575   TIME= 20:25:14
+ Rigid target surface identified by real constant set 50.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2134.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ This pair will be merged with other pair defined by real constant set   
+ 78.                                                                     
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ *WARNING*: Certain rigid elements (for example 1222&1273) overlap each  
+ other.                                                                  
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.575   TIME= 20:25:14
+ Rigid target surface identified by real constant set 51.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2135.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.575   TIME= 20:25:14
+ Rigid target surface identified by real constant set 52.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2136.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ This pair will be merged with other pair defined by real constant set   
+ 79.                                                                     
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.575   TIME= 20:25:14
+ Rigid target surface identified by real constant set 53.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2137.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.575   TIME= 20:25:14
+ Rigid target surface identified by real constant set 54.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2138.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ This pair will be merged with other pair defined by real constant set   
+ 80.                                                                     
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.575   TIME= 20:25:14
+ Rigid target surface identified by real constant set 55.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2139.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.576   TIME= 20:25:14
+ Rigid target surface identified by real constant set 56.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2140.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ This pair will be merged with other pair defined by real constant set   
+ 68.                                                                     
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ *WARNING*: Certain rigid elements (for example 1234&1281) overlap each  
+ other.                                                                  
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.576   TIME= 20:25:14
+ Rigid target surface identified by real constant set 57.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2141.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.576   TIME= 20:25:14
+ Rigid target surface identified by real constant set 58.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2142.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ *WARNING*: Certain rigid elements (for example 1238&1277) overlap each  
+ other.                                                                  
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.576   TIME= 20:25:14
+ Rigid target surface identified by real constant set 59.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2143.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.576   TIME= 20:25:14
+ Rigid target surface identified by real constant set 60.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2144.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ *WARNING*: Certain rigid elements (for example 1242&1269) overlap each  
+ other.                                                                  
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.576   TIME= 20:25:14
+ Rigid target surface identified by real constant set 61.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2145.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.576   TIME= 20:25:14
+ Rigid target surface identified by real constant set 62.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2146.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.576   TIME= 20:25:14
+ Rigid target surface identified by real constant set 63.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2147.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.576   TIME= 20:25:14
+ Rigid target surface identified by real constant set 64.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2148.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.578   TIME= 20:25:14
+ Rigid target surface identified by real constant set 65.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2149.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.578   TIME= 20:25:14
+ Rigid target surface identified by real constant set 66.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2150.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ This pair will be merged with other pair defined by real constant set   
+ 50.                                                                     
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ *WARNING*: Certain rigid elements (for example 1254&1286) overlap each  
+ other.                                                                  
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.579   TIME= 20:25:14
+ Rigid target surface identified by real constant set 67.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2151.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.579   TIME= 20:25:14
+ Rigid target surface identified by real constant set 68.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2152.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ This pair will be merged with other pair defined by real constant set   
+ 56.                                                                     
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ *WARNING*: Certain rigid elements (for example 1258&1281) overlap each  
+ other.                                                                  
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.579   TIME= 20:25:14
+ Rigid target surface identified by real constant set 69.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2153.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.579   TIME= 20:25:14
+ Rigid target surface identified by real constant set 70.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2154.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ This pair will be merged with other pair defined by real constant set   
+ 54.                                                                     
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ *WARNING*: Certain rigid elements (for example 1262&1290) overlap each  
+ other.                                                                  
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.580   TIME= 20:25:14
+ Rigid target surface identified by real constant set 71.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2155.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.580   TIME= 20:25:14
+ Rigid target surface identified by real constant set 72.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2156.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ This pair will be merged with other pair defined by real constant set   
+ 52.                                                                     
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ *WARNING*: Certain rigid elements (for example 1266&1288) overlap each  
+ other.                                                                  
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.580   TIME= 20:25:14
+ Rigid target surface identified by real constant set 73.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2157.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.582   TIME= 20:25:14
+ Force-distributed-surface identified by real constant set 74 and        
+ contact element type 74 has been set up.  The pilot node 2158 is used   
+ to apply the force.  Internal MPC will be built.                        
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ *WARNING*: Certain contact elements (for example 1273&1222) overlap     
+ each other.                                                             
+ Please verify constraints (including rotational degrees of freedom)
+  on the pilot node by yourself.
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.582   TIME= 20:25:14
+ Force-distributed-surface identified by real constant set 76 and        
+ contact element type 76 has been set up.  The pilot node 2159 is used   
+ to apply the force.  Internal MPC will be built.                        
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ *WARNING*: Certain contact elements (for example 1281&1234) overlap     
+ each other.                                                             
+ Please verify constraints (including rotational degrees of freedom)
+  on the pilot node by yourself.
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.582   TIME= 20:25:14
+ Rigid target surface identified by real constant set 78.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2160.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ This pair will be merged with other pair defined by real constant set   
+ 50.                                                                     
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ *WARNING*: Certain rigid elements (for example 1286&1254) overlap each  
+ other.                                                                  
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.582   TIME= 20:25:14
+ Rigid target surface identified by real constant set 79.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2161.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ This pair will be merged with other pair defined by real constant set   
+ 52.                                                                     
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ *WARNING*: Certain rigid elements (for example 1288&1266) overlap each  
+ other.                                                                  
+ ****************************************
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.582   TIME= 20:25:14
+ Rigid target surface identified by real constant set 80.  The degrees   
+ of freedom of the rigid surface are driven by the pilot node 2162.      
+ Internal MPC will be built.                                             
+ Boundary conditions can be applied on any target node.
+ The rigid surface does not overlap other elements.                      
+ This pair will be merged with other pair defined by real constant set   
+ 54.                                                                     
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ *WARNING*: Certain rigid elements (for example 1290&1262) overlap each  
+ other.                                                                  
+ ****************************************
+  
+
+ *** WARNING ***                         ELAPSED TIME =       7.582   TIME= 20:25:14
+ Overconstraint may occur for Lagrange multiplier or MPC based contact   
+ algorithm.                                                              
+ The reasons for possible overconstraint are:                            
+
+ *** WARNING ***                         ELAPSED TIME =       7.582   TIME= 20:25:14
+ Certain contact elements (for example 1290 & 1262) overlap with other.  
+ ****************************************
+  
+  
+
+ *** NOTE ***                            ELAPSED TIME =       7.599   TIME= 20:25:14
+ Predictor is ON by default for structural elements with rotational      
+ degrees of freedom.  Use the PRED,OFF command to turn the predictor     
+ OFF if it adversely affects the convergence.                            
+
+
+ *** WARNING ***                         ELAPSED TIME =       7.715   TIME= 20:25:14
+ The independent nodes of force-distributed-surface constraint (real ID  
+ 74) are found collinear.  However, because of rotation degrees of       
+ freedom existed in the underlying element(s), the moment component      
+ that is parallel to the collinear axis will be calculated based on      
+ those rotations.  You can increase the condition number threshold at    
+ seventh field (PZER) of this real ID if you find this pair should not   
+ be identified as collinear (default is 1e4).                            
+
+ *** WARNING ***                         ELAPSED TIME =       7.716   TIME= 20:25:14
+ The independent nodes of force-distributed-surface constraint (real ID  
+ 76) are found collinear.  However, because of rotation degrees of       
+ freedom existed in the underlying element(s), the moment component      
+ that is parallel to the collinear axis will be calculated based on      
+ those rotations.  You can increase the condition number threshold at    
+ seventh field (PZER) of this real ID if you find this pair should not   
+ be identified as collinear (default is 1e4).                            
+
+ *** WARNING ***                         ELAPSED TIME =       7.725   TIME= 20:25:14
+ 376 constraints specified, but exactly 6 needed for 3-D inertia         
+ relief.                                                                 
+  Maybe OK if symmetry constraints or internal MPC are included.  Check  
+ that the reactions at all constraints are zero.                         
+  
+ The FEA model contains 0 external CE equations and 366 internal CE      
+ equations.                                                              
+
+
+                         ***********  PRECISE MASS SUMMARY  ***********
+
+   TOTAL RIGID BODY MASS MATRIX ABOUT ORIGIN
+               Translational mass               |   Coupled translational/rotational mass
+         143.63        0.0000        0.0000     |     0.0000       -94.003        43.359    
+         0.0000        143.63        0.0000     |     94.003        0.0000        61.592    
+         0.0000        0.0000        143.63     |    -43.359       -61.592        0.0000    
+     ------------------------------------------ | ------------------------------------------
+                                                |         Rotational mass (inertia)
+                                                |     178.02        18.569        40.328    
+                                                |     18.569        197.35       -25.701    
+                                                |     40.328       -25.701        60.367    
+
+   TOTAL MASS =  143.63    
+     The mass principal axes coincide with the global Cartesian axes
+
+   CENTER OF MASS (X,Y,Z)=   0.42882      -0.30188      -0.65448    
+
+   TOTAL INERTIA ABOUT CENTER OF MASS
+         103.41      -0.24703E-01   0.17277E-01
+       -0.24703E-01    109.42        2.6763    
+        0.17277E-01    2.6763        20.866    
+
+   PRINCIPAL INERTIAS =    103.41        109.50        20.785    
+   ORIENTATION VECTORS OF THE INERTIA PRINCIPAL AXES IN GLOBAL CARTESIAN
+     ( 1.000, 0.004, 0.000) (-0.004, 1.000, 0.030) (-0.000,-0.030, 1.000) 
+
+
+  *** MASS SUMMARY BY ELEMENT TYPE ***
+
+  TYPE      MASS
+     1  0.134284    
+     2  0.134284    
+     3  0.887538    
+     4  0.888218    
+     5   129.757    
+     6  0.715538    
+     7  0.715538    
+     8  0.716690    
+     9  0.716690    
+    10   1.12452    
+    11   1.11946    
+    12   1.11946    
+    13   1.12452    
+    14   1.11830    
+    15   1.11830    
+    16   1.11931    
+    17   1.11931    
+
+ Range of element maximum matrix coefficients in global coordinates
+ Maximum = 1.471436633E+10 at element 328.                               
+ Minimum = 17661.6949 at element 1071.                                   
+
+   *** ELEMENT MATRIX FORMULATION TIMES
+     TYPE    NUMBER     ENAME   TOTAL ELAPSED   AVG ELAPSED
+
+        1         3   BEAM188          0.0006   0.000199367
+        2         3   BEAM188          0.0003   0.000085433
+        3        15   BEAM188          0.0034   0.000226493
+        4        15   BEAM188          0.0033   0.000222953
+        5       863   BEAM188          0.1684   0.000195119
+        6         6   BEAM188          0.0017   0.000283183
+        7         6   BEAM188          0.0014   0.000225867
+        8         6   BEAM188          0.0009   0.000152983
+        9         6   BEAM188          0.0012   0.000191900
+       10        18   BEAM188          0.0041   0.000229600
+       11        18   BEAM188          0.0041   0.000230300
+       12        18   BEAM188          0.0039   0.000217161
+       13        18   BEAM188          0.0046   0.000254589
+       14        18   BEAM188          0.0049   0.000272489
+       15        18   BEAM188          0.0038   0.000210478
+       16        18   BEAM188          0.0040   0.000219467
+       17        18   BEAM188          0.0038   0.000212794
+       18         2  TARGE170          0.0000   0.000006400
+       19         2  TARGE170          0.0000   0.000008700
+       20         2  TARGE170          0.0000   0.000014050
+       21         2  TARGE170          0.0000   0.000006050
+       22         2  TARGE170          0.0000   0.000003550
+       23         2  TARGE170          0.0000   0.000002900
+       24         2  TARGE170          0.0000   0.000003250
+       25         2  TARGE170          0.0000   0.000003950
+       26         2  TARGE170          0.0000   0.000005350
+       27         2  TARGE170          0.0000   0.000004400
+       28         2  TARGE170          0.0000   0.000004350
+       29         2  TARGE170          0.0000   0.000007250
+       30         2  TARGE170          0.0000   0.000003850
+       31         2  TARGE170          0.0000   0.000004200
+       32         2  TARGE170          0.0000   0.000004100
+       33         2  TARGE170          0.0000   0.000003300
+       34         2  TARGE170          0.0000   0.000014900
+       35         2  TARGE170          0.0000   0.000003700
+       36         2  TARGE170          0.0000   0.000003150
+       37         2  TARGE170          0.0000   0.000003000
+       38         2  TARGE170          0.0000   0.000003450
+       39         2  TARGE170          0.0000   0.000003150
+       40         2  TARGE170          0.0000   0.000003650
+       41         2  TARGE170          0.0000   0.000002950
+       42         2  TARGE170          0.0000   0.000003700
+       43         2  TARGE170          0.0000   0.000004050
+       44         2  TARGE170          0.0000   0.000003600
+       45         2  TARGE170          0.0000   0.000008250
+       46         2  TARGE170          0.0000   0.000004000
+       47         2  TARGE170          0.0000   0.000003000
+       48         2  TARGE170          0.0000   0.000003600
+       49         2  TARGE170          0.0000   0.000002850
+       50         2  TARGE170          0.0000   0.000003800
+       51         2  TARGE170          0.0000   0.000002900
+       52         2  TARGE170          0.0000   0.000003350
+       53         2  TARGE170          0.0000   0.000003650
+       54         2  TARGE170          0.0000   0.000003800
+       55         2  TARGE170          0.0000   0.000003700
+       56         2  TARGE170          0.0000   0.000003450
+       57         2  TARGE170          0.0000   0.000003000
+       58         2  TARGE170          0.0000   0.000003550
+       59         2  TARGE170          0.0000   0.000004050
+       60         2  TARGE170          0.0000   0.000003550
+       61         2  TARGE170          0.0000   0.000002800
+       62         2  TARGE170          0.0000   0.000004100
+       63         2  TARGE170          0.0000   0.000003350
+       64         2  TARGE170          0.0000   0.000003500
+       65         2  TARGE170          0.0000   0.000003000
+       66         2  TARGE170          0.0000   0.000002950
+       67         2  TARGE170          0.0000   0.000003500
+       68         2  TARGE170          0.0000   0.000002850
+       69         2  TARGE170          0.0000   0.000003050
+       70         2  TARGE170          0.0000   0.000004000
+       71         2  TARGE170          0.0000   0.000002950
+       72         2  TARGE170          0.0000   0.000003050
+       73         2  TARGE170          0.0000   0.000003100
+       74         7  CONTA175          0.0003   0.000046029
+       75         1  TARGE170          0.0000   0.000003800
+       76         7  CONTA175          0.0002   0.000033343
+       77         1  TARGE170          0.0000   0.000003400
+       78         2  TARGE170          0.0000   0.000003200
+       79         2  TARGE170          0.0000   0.000002800
+       80         2  TARGE170          0.0000   0.000003350
+       81         1    MPC184          0.0001   0.000130400
+       82         1    MPC184          0.0002   0.000169800
+       83         1    MPC184          0.0001   0.000143800
+       84         1    MPC184          0.0001   0.000149900
+       85         1    MPC184          0.0001   0.000078900
+       86         1    MPC184          0.0001   0.000131600
+       87         1    MPC184          0.0001   0.000136400
+       88         1    MPC184          0.0003   0.000252400
+       89         1    MPC184          0.0001   0.000078200
+       90         1    MPC184          0.0002   0.000172600
+       91         1    MPC184          0.0002   0.000198100
+       92         1    MPC184          0.0001   0.000067500
+       93         1    MPC184          0.0001   0.000083300
+       94         1    MPC184          0.0003   0.000311100
+       95         1    MPC184          0.0001   0.000118500
+       96         1    MPC184          0.0001   0.000076200
+       97         1    MPC184          0.0001   0.000129300
+       98         1    MPC184          0.0001   0.000114300
+       99         1    MPC184          0.0001   0.000130600
+      100         1    MPC184          0.0002   0.000186900
+      101         1    MPC184          0.0003   0.000289500
+      102         1    MPC184          0.0002   0.000183500
+      103         1    MPC184          0.0002   0.000213300
+      104         1    MPC184          0.0001   0.000108200
+      105         1  COMBIN14          0.0001   0.000057500
+      106         1  COMBIN14          0.0001   0.000062600
+      107         1  COMBIN14          0.0000   0.000042800
+      108         1  COMBIN14          0.0000   0.000015500
+ Elapsed Time at end of element matrix formulation = 8.0394748.          
+
+ SPARSE MATRIX DIRECT SOLVER.
+  Number of equations =       12803,    Maximum wavefront =     72
+
+
+  Memory allocated on this process
+  -------------------------------------------------------------------
+  Equation solver memory allocated                     =    25.571 MB
+  Equation solver memory required for in-core mode     =    12.561 MB
+  Equation solver memory required for out-of-core mode =     9.745 MB
+  Total (solver and non-solver) memory allocated       =   407.286 MB
+
+ *** NOTE ***                            ELAPSED TIME =       8.172   TIME= 20:25:14
+ The Sparse Matrix Solver is currently running in the in-core memory     
+ mode.  This memory mode uses the most amount of memory in order to      
+ avoid using the hard drive as much as possible, which most often        
+ results in the fastest solution time.  This mode is recommended if      
+ enough physical memory is present to accommodate all of the solver      
+ data.                                                                   
+
+ *** WARNING ***                         ELAPSED TIME =       8.172   TIME= 20:25:14
+ Pivoting has been activated for the Sparse Matrix Solver.  The memory   
+ required may greatly exceed the predicted amount.  In that event, use   
+ the DSPOPTION command to change the memory mode and/or memory size      
+ used by the Sparse Matrix Solver.                                       
+ curEqn=  12803  totEqn=  12803 Job CP sec=      1.594
+      Factor Done= 102% Factor Wall sec=      0.171 rate=       0.0 GFlops
+ Sparse solver maximum pivot= 5.368570104E+09 at node 1777 UY.           
+ Sparse solver minimum pivot= 3185.51975 at node 1972 ROTZ.              
+ Sparse solver minimum pivot in absolute value= 3185.51975 at node 1972  
+ ROTZ.                                                                   
+
+   *** ELEMENT RESULT CALCULATION TIMES
+     TYPE    NUMBER     ENAME   TOTAL ELAPSED   AVG ELAPSED
+
+        1         3   BEAM188          0.0007   0.000235533
+        2         3   BEAM188          0.0007   0.000232033
+        3        15   BEAM188          0.0068   0.000452467
+        4        15   BEAM188          0.0068   0.000455587
+        5       863   BEAM188          0.4468   0.000517682
+        6         6   BEAM188          0.0015   0.000246650
+        7         6   BEAM188          0.0015   0.000254783
+        8         6   BEAM188          0.0029   0.000485583
+        9         6   BEAM188          0.0030   0.000499817
+       10        18   BEAM188          0.0117   0.000650711
+       11        18   BEAM188          0.0062   0.000346528
+       12        18   BEAM188          0.0060   0.000333306
+       13        18   BEAM188          0.0108   0.000599844
+       14        18   BEAM188          0.0056   0.000309300
+       15        18   BEAM188          0.0054   0.000302089
+       16        18   BEAM188          0.0114   0.000633483
+       17        18   BEAM188          0.0125   0.000695950
+       74         7  CONTA175          0.0000   0.000003343
+       76         7  CONTA175          0.0000   0.000002986
+       81         1    MPC184          0.0000   0.000048400
+       82         1    MPC184          0.0005   0.000493000
+       83         1    MPC184          0.0003   0.000279400
+       84         1    MPC184          0.0006   0.000566000
+       85         1    MPC184          0.0001   0.000080800
+       86         1    MPC184          0.0001   0.000133100
+       87         1    MPC184          0.0001   0.000120400
+       88         1    MPC184          0.0001   0.000098000
+       89         1    MPC184          0.0003   0.000345300
+       90         1    MPC184          0.0001   0.000057700
+       91         1    MPC184          0.0002   0.000160500
+       92         1    MPC184          0.0002   0.000183800
+       93         1    MPC184          0.0003   0.000292700
+       94         1    MPC184          0.0087   0.008663100
+       95         1    MPC184          0.0002   0.000235700
+       96         1    MPC184          0.0001   0.000105200
+       97         1    MPC184          0.0001   0.000143500
+       98         1    MPC184          0.0007   0.000716100
+       99         1    MPC184          0.0001   0.000137300
+      100         1    MPC184          0.0001   0.000139100
+      101         1    MPC184          0.0002   0.000221000
+      102         1    MPC184          0.0001   0.000132300
+      103         1    MPC184          0.0003   0.000265900
+      104         1    MPC184          0.0001   0.000134700
+      105         1  COMBIN14          0.0000   0.000029200
+      106         1  COMBIN14          0.0000   0.000031700
+      107         1  COMBIN14          0.0001   0.000067700
+      108         1  COMBIN14          0.0000   0.000014200
+
+   *** NODAL LOAD CALCULATION TIMES
+     TYPE    NUMBER     ENAME   TOTAL ELAPSED   AVG ELAPSED
+
+        1         3   BEAM188          0.0001   0.000019800
+        2         3   BEAM188          0.0001   0.000018267
+        3        15   BEAM188          0.0006   0.000038680
+        4        15   BEAM188          0.0030   0.000196800
+        5       863   BEAM188          0.0618   0.000071593
+        6         6   BEAM188          0.0001   0.000024767
+        7         6   BEAM188          0.0001   0.000022333
+        8         6   BEAM188          0.0005   0.000077433
+        9         6   BEAM188          0.0003   0.000055817
+       10        18   BEAM188          0.0012   0.000066917
+       11        18   BEAM188          0.0006   0.000035389
+       12        18   BEAM188          0.0006   0.000035089
+       13        18   BEAM188          0.0011   0.000060761
+       14        18   BEAM188          0.0006   0.000032889
+       15        18   BEAM188          0.0005   0.000030094
+       16        18   BEAM188          0.0014   0.000077778
+       17        18   BEAM188          0.0012   0.000068272
+       74         7  CONTA175          0.0000   0.000000000
+       76         7  CONTA175          0.0000   0.000000000
+       81         1    MPC184          0.0000   0.000002800
+       82         1    MPC184          0.0000   0.000008400
+       83         1    MPC184          0.0000   0.000019500
+       84         1    MPC184          0.0000   0.000015900
+       85         1    MPC184          0.0000   0.000004000
+       86         1    MPC184          0.0000   0.000007100
+       87         1    MPC184          0.0000   0.000006900
+       88         1    MPC184          0.0000   0.000004600
+       89         1    MPC184          0.0000   0.000014000
+       90         1    MPC184          0.0000   0.000004300
+       91         1    MPC184          0.0000   0.000007800
+       92         1    MPC184          0.0000   0.000012600
+       93         1    MPC184          0.0000   0.000015400
+       94         1    MPC184          0.0069   0.006929100
+       95         1    MPC184          0.0000   0.000014300
+       96         1    MPC184          0.0000   0.000005400
+       97         1    MPC184          0.0000   0.000006100
+       98         1    MPC184          0.0000   0.000007100
+       99         1    MPC184          0.0000   0.000006900
+      100         1    MPC184          0.0000   0.000006500
+      101         1    MPC184          0.0000   0.000013800
+      102         1    MPC184          0.0000   0.000009600
+      103         1    MPC184          0.0000   0.000016300
+      104         1    MPC184          0.0000   0.000008400
+      105         1  COMBIN14          0.0000   0.000006400
+      106         1  COMBIN14          0.0000   0.000030300
+      107         1  COMBIN14          0.0000   0.000006900
+      108         1  COMBIN14          0.0000   0.000003100
+ *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
+ *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+
+
+ *** MAPDL BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+        0.312 MB WRITTEN ON ELEMENT MATRIX FILE: file.emat
+       20.188 MB WRITTEN ON ELEMENT SAVED DATA FILE: file.esav
+        2.562 MB WRITTEN ON ASSEMBLED MATRIX FILE: file.full
+        2.812 MB WRITTEN ON RESULTS FILE: file.rst
+ *************** Write FE CONNECTORS *********
+
+ WRITE OUT CONSTRAINT EQUATIONS TO FILE= file.ce                                                                                                                                                                                                                                                             
+
+
+                         ***********  PRECISE MASS SUMMARY  ***********
+
+   TOTAL RIGID BODY MASS MATRIX ABOUT ORIGIN
+               Translational mass               |   Coupled translational/rotational mass
+         143.63        0.0000        0.0000     |     0.0000       -94.003        43.359    
+         0.0000        143.63        0.0000     |     94.003        0.0000        61.592    
+         0.0000        0.0000        143.63     |    -43.359       -61.592        0.0000    
+     ------------------------------------------ | ------------------------------------------
+                                                |         Rotational mass (inertia)
+                                                |     178.02        18.569        40.328    
+                                                |     18.569        197.35       -25.701    
+                                                |     40.328       -25.701        60.367    
+
+   TOTAL MASS =  143.63    
+     The mass principal axes coincide with the global Cartesian axes
+
+   CENTER OF MASS (X,Y,Z)=   0.42882      -0.30188      -0.65448    
+
+   TOTAL INERTIA ABOUT CENTER OF MASS
+         103.41      -0.24703E-01   0.17277E-01
+       -0.24703E-01    109.42        2.6763    
+        0.17277E-01    2.6763        20.866    
+
+   PRINCIPAL INERTIAS =    103.41        109.50        20.785    
+   ORIENTATION VECTORS OF THE INERTIA PRINCIPAL AXES IN GLOBAL CARTESIAN
+     ( 1.000, 0.004, 0.000) (-0.004, 1.000, 0.030) (-0.000,-0.030, 1.000) 
+
+
+          *********  TOTAL LOAD SUMMARY  *********
+                                              X-AXIS      Y-AXIS      Z-AXIS
+ FORCES AT CENTER OF MASS.................. 0.10047E-08  0.0000     0.36468E-08
+ MOMENTS ABOUT ORIGIN...................... 0.15022E-04 0.69569E-09  1239.8    
+ MOMENTS ABOUT CENTER OF MASS.............. 0.15023E-04 0.29171E-08  1239.8    
+
+
+          *********  INERTIA RELIEF SUMMARY  *********
+                                                 X-AXIS      Y-AXIS      Z-AXIS
+ TRANSLATIONAL ACCELERATIONS.................. 0.69953E-11  0.0000     0.25390E-10
+ ROTATIONAL ACCELERATIONS ABOUT CENTER OF MASS-0.10307E-01 -1.4580      59.606    
+
+ ****************************************************
+ *************** FINISHED SOLVE FOR LS 1 *************
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  ELAPSED TIME =         8.996
+
+
+
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE= 0.249908569E-02
+
+ PRINTOUT RESUMED BY /GOP
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2026 R1          26.1     ***
+ Ansys Mechanical Enterprise Academic Student      
+ 01055371  VERSION=WINDOWS x64   20:25:15  JUL 15, 2026 Elapsed Time=      9.017
+
+ suspension_analysis--Static Structural (A5)                                   
+
+
+
+          ***** MAPDL RESULTS INTERPRETATION (POST1) *****
+
+ *** NOTE ***                            ELAPSED TIME =       9.022   TIME= 20:25:15
+ Reading results into the database (SET command) will update the current 
+ displacement and force boundary conditions in the database with the     
+ values from the results file for that load set.  Note that any          
+ subsequent solutions will use these values unless action is taken to    
+ either SAVE the current values or not overwrite them (/EXIT,NOSAVE).    
+
+ Set Encoding of XML File to:ISO-8859-1
+
+ Set Output of XML File to:
+     PARM,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,
+         ,     ,     ,     ,     ,     ,     ,
+
+ DATABASE WRITTEN ON FILE  parm.xml                                                                                                                                                                                                                                                            
+
+ EXIT THE MAPDL POST1 DATABASE PROCESSOR
+
+
+ ***** ROUTINE COMPLETED *****  ELAPSED TIME =         9.034
+
+
+
+ PRINTOUT RESUMED BY /GOP
+
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE= 0.250956553E-02
+
+ PARAMETER _PREPTIME =    0.2692426000    
+
+ PARAMETER _SOLVTIME =     1.734975600    
+
+ PARAMETER _POSTTIME =    0.3772740000E-01
+
+ PARAMETER _TOTALTIM =     2.041945600    
+
+ *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  0.00000000    
+
+ *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE=  0.00000000    
+
+ *GET  _SSMODE   FROM  ACTI  ITEM=SOLU SSMM  VALUE=  2.00000000    
+
+ *GET  _NDOFS    FROM  ACTI  ITEM=SOLU NDOF  VALUE=  12803.0000    
+ --- Total number of nodes = 2162
+ --- Total number of elements = 1229
+ --- Element load balance ratio = 0
+ --- Time to combine distributed files = 0
+ --- Sparse memory mode = 2
+ --- Number of DOF = 12803
+
+ EXIT MAPDL WITHOUT SAVING DATABASE
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          9
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
++--------------------- M A P D L   S T A T I S T I C S ------------------------+
+
+Release: 2026 R1            Build: 26.1       Update: UP20260202   Platform: WINDOWS x64 
+Date Run: 07/15/2026   Time: 20:25     Process ID: 260188
+Operating System: Windows 11  (Build: 26200)
+
+Processor Model: 12th Gen Intel(R) Core(TM) i7-1250U
+
+Compiler: Intel(R) Fortran Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) C/C++ Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) oneAPI Math Kernel Library Version 2024.2.3-Product Build 20250403
+
+Number of machines requested            :    1
+Total number of cores available         :   12
+Number of physical cores available      :   10
+Number of processes requested           :    1
+Number of threads per process requested :    2
+Total number of cores requested         :    2 (Shared Memory Parallel)                    
+
+GPU Acceleration: Not Requested
+
+Job Name: file
+Input File: dummy.dat
+Working Directory: C:\Users\tasle\Documents\PersonalProjects\FSAE\GOGO_FSAE_CAD\FEA\_ProjectScratch\ScrE697
+
+Total CPU time for main thread                    :        2.9 seconds
+Total CPU time summed for all threads             :        2.5 seconds
+
+Elapsed time spent obtaining a license            :        0.5 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.3 seconds
+Elapsed time spent solution - preprocessing       :        0.1 seconds
+Elapsed time spent computing solution             :        1.4 seconds
+   Elapsed time in element formation & assembly   :        0.4 seconds
+   Elapsed time in equation solver                :        0.4 seconds
+   Elapsed time in element result calculations    :        0.4 seconds
+Elapsed time spent solution - postprocessing      :        0.0 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+Equation solver used                              :            Sparse (symmetric)
+Sparse direct equation solver computational rate  :        0.0 Gflops
+
+Sum of disk space used on all processes           :       26.7 MB
+
+Sum of memory used on all processes               :       56.0 MB
+Sum of memory allocated on all processes          :     2304.0 MB
+Physical memory available                         :         32 GB
+Total amount of I/O written to disk               :        0.1 GB
+Total amount of I/O read from disk                :        0.0 GB
+
++------------------ E N D   M A P D L   S T A T I S T I C S -------------------+
+
+
+ *-----------------------------------------------------------------------------*
+ |                                                                             |
+ |                               RUN COMPLETED                                 |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Ansys MAPDL 2026 R1         Build 26.1         UP20260202    WINDOWS x64   |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Database Requested(-db)  1024 MB     Scratch Memory Requested      1024 MB |
+ |  Maximum Database Used       3 MB     Maximum Scratch Memory Used     53 MB |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |        CP Time      (sec) =          2.469       Time  =  20:25:25          |
+ |        Elapsed Time (sec) =         19.441       Date  =  07/15/2026        |
+ |                                                                             |
+ *-----------------------------------------------------------------------------*
