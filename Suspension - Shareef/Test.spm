@@ -1,0 +1,249 @@
+SUSPENSION SETTINGS
+
+Axle Position: Front
+MacPherson: 0
+MonoShock: 0
+Integral Link: 0
+Suspension Type: Double Wishbone
+Configuration: Outboard Spring
+Mounting Point: Upright
+
+VEHICLE SETTINGS
+
+Wheel Definition: Tyre Width & Aspect Ratio
+Wheel Radius: 273.1
+Rim Diameter: 13
+Rim Width: 7.87
+Rim Offset: 20
+Tyre Width: 200
+Aspect Ratio: 54
+Brakes Position: Outboard
+Wheeldrive: Rear
+Camber: 0
+Toe: 0
+Wheelbase: 1620.00
+Centre of Gravity Height: 300
+Front Brake Balance: 70
+Front Drive Ratio: 0
+X SemiAxis: 0
+Y SemiAxis: 0
+Z SemiAxis: 0
+Distance SemiAxis: 0
+SemiAxis Fixed Joint: Chassis
+
+SUSPENSION GEOMETRY
+
+WheelCenterX: 0
+WheelCenterY:  600
+WheelCenterZ: 228.60
+
+Chassis Side
+
+TLFXc: 179.00
+TLFYc: 251.00
+TLFZc: 330.00
+TLRXc: -190.00
+TLRYc: 251.00
+TLRZc: 305.00
+BLFXc: 248.00
+BLFYc: 70.00
+BLFZc: 125.00
+BLRXc: -245.00
+BLRYc: 70.00
+BLRZc: 129.00
+TRXc: 81.00
+TRYc: 180.00
+TRZc: 157.00
+PRXc: -4
+PRYc: 223.5
+PRZc: 542.00
+SXc: -152
+SYc: 178.28
+SZc: 595.43
+
+Wheel Side
+
+TLFXw: -10
+TLFYw: 500
+TLFZw: 325
+TLRXw: -10
+TLRYw: 500
+TLRZw: 325
+BLFXw: 3
+BLFYw: 545
+BLFZw: 139
+BLRXw: 3
+BLRYw: 545
+BLRZw: 139
+TRXw:  67
+TRYw:  518
+TRZw: 168
+PRXw: 1.29
+PRYw: 537.5
+PRZw: 171
+SXw: -47
+SYw: 178.28
+SZw: 595.43
+
+Rocker
+
+P1X: -35
+P1Y: 199.38
+P1Z: 531.80
+P2X: -35
+P2Y: 237.54
+P2Z: 564.10
+
+SUSPENSION ELEMENTS
+
+Heave Spring: 0
+Heave Symm: 1
+HSleftX: 0
+HSleftY: 0
+HSleftZ: 0
+HSrightX:  0
+HSrightY:  0
+HSrightZ:  0
+Roll Spring: 0
+RSleftX: 0
+RSleftY: 0
+RSleftZ: 0
+RSrightX: -70
+RSrightY: 0
+RSrightZ: 0
+Antiroll CBar: 1
+CLinkX: -10.367
+CLinkY: 176.931
+CLinkZ: 597.007
+CARBX: 120.753
+CARBY: 170.484
+CARBZ: 604.341
+CPivotX: 120
+CPivotY: 171
+CPivotZ: 550
+CBar Mounting: Upright
+Antiroll TBar: 0
+TLinkX: 60
+TLinkY: 200
+TLinkZ: 570
+TARBX: 400
+TARBY: 120
+TARBZ: 550
+TPivotX: 400
+TPivotY: 0
+TPivotZ: 400
+Third Element: 0
+T3EARBX: 380
+T3EARBY: 0
+T3EARBZ: 550
+T3ECX: 200
+T3ECY: 0
+T3ECZ: 550
+
+STEERING SETTINGS
+
+C Factor: 64.5
+Pinion Position: Rear
+Steering Wheel Position X: -280
+Steering Wheel Position Y: 0
+Steering Wheel Position Z: 535
+Joint2 X: -180
+Joint2 Y: 0
+Joint2 Z: 520
+Y Pinion: 0
+Pinion Offset: 10
+Rack Angle: -10
+L Pinion: 150
+Pinion Angle: 0
+Gamma Angle: 90
+
+RUN PARAMETERS
+
+Calculate Bump: 1
+Calculate Roll: 1
+Bump Max: 25
+Rebound Max: 25
+N of Steps Bump: 20
+Calculate Steer: 1
+Steering Wheel Angle Max: 200
+N of Steps Steer: 20
+Calculate Steering Column: 1
+Calculate BumpSteer: 1
+BumpSteer Angle: 100
+Steering Model: Costant Z
+
+GRAPHIC SETTINGS
+
+Draw Wheels: 1
+Draw Upright: 1
+Draw Rocker: 0
+Draw Offset Rim: 0
+Draw Springs: 1
+Draw 3D Arm: 1
+Draw Steering: 1
+Draw Chassis: 0
+Draw Arrow: 1
+Draw Origin: 1
+Draw Medium R: 1
+Draw Push/Spring Link: 1
+Draw SemiAxis: 0
+Draw Opposite Axle: 0
+Draw MainSpring: 1
+Spring Diameter: 50
+N of Spire in a Spring: 5
+3D Arm Diameter: 20
+SemiAxis Diameter: 25
+Steering Wheel Diameter: 180
+Line Width: 1.000
+Point Size: 5
+Chassis Opacity: 1.000
+2D View: 1
+3D View: 1
+View: Two Wheels
+
+3D Joint size: 8
+Main Spring: 1
+Load Asymmetric: 0
+Load Follow Wheel Toe: 0
+Load R CP Fx: 0
+Load R CP Fy: 0
+Load R CP Fz: 0
+Load R CP Mx: 0
+Load R CP My: 0
+Load R CP Mz: 0
+Load R WC Fx: 0
+Load R WC Fy: 0
+Load R WC Fz: 0
+Load R WC Mx: 0
+Load R WC My: 0
+Load R WC Mz: 0
+Load L CP Fx: 0
+Load L CP Fy: 0
+Load L CP Fz: 0
+Load L CP Mx: 0
+Load L CP My: 0
+Load L CP Mz: 0
+Load L WC Fx: 0
+Load L WC Fy: 0
+Load L WC Fz: 0
+Load L WC Mx: 0
+Load L WC My: 0
+Load L WC Mz: 0
+Load Heave Force: 0
+Load Roll Force: 0
+Load CBar Torque: 0
+Load TBar Torque: 0
+Load Third Element Force: 0
+Draw Load Arrows: 1
+Draw Load Inputs: 1
+Draw Load Reactions: 1
+Draw Load Axials: 1
+Draw Load Labels: 1
+Load Arrow Scale: 100
+Draw CG: 0
+2D Link Width: 2
+Draw CBar: 1
+Draw Third Element: 1
+Wheel Opacity: 50
+NOTES :
+234.464884125867
